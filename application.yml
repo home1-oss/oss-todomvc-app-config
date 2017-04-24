@@ -1,12 +1,13 @@
 # todomvc-app-config
 
-logging.level.: ${LOGGING_LEVEL_:INFO}
+#logging.level.: ${LOGGING_LEVEL_:INFO}
 logging:
   file: ${LOGGING_FILE:oss-todomvc-app}.log
-  path: ${LOGGING_PATH:${user.home}/data/oss-todomvc-app/logs}
+  level.: ${LOGGING_LEVEL_:INFO}
   level:
     org.springframework.amqp: ${LOGGING_LEVEL_:INFO}
     com.netflix.discovery.TimedSupervisorTask: OFF # TODO switch this off
+  path: ${LOGGING_PATH:${user.home}/data/oss-todomvc-app/logs}
 
 app:
   error:
