@@ -7,7 +7,7 @@ logging:
   level:
     org.springframework.amqp: ${LOGGING_LEVEL_:INFO}
     com.netflix.discovery.TimedSupervisorTask: OFF # TODO switch this off
-  path: ${LOGGING_PATH:${user.home}/data/oss-todomvc-app/logs}
+  path: ${LOGGING_PATH:${user.home}/.oss/oss-todomvc-app/logs}
 
 app:
   error:
