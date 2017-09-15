@@ -6,12 +6,12 @@ logging:
   level.: ${LOGGING_LEVEL_:INFO}
   level:
     org.springframework.amqp: ${LOGGING_LEVEL_:INFO}
-    com.netflix.discovery.TimedSupervisorTask: OFF # TODO switch this off
+    com.netflix.discovery.TimedSupervisorTask: WARN # TODO switch this off
   path: ${LOGGING_PATH:${user.home}/.oss/oss-todomvc-app/logs}
 
 app:
   error:
-    handlerEnabled: false # 统一异常处理禁用@ControllerAdvice方式
+    handlerEnabled: false # 统一异常处理. Disable the @ControllerAdvice way.
   type: RESOURCE
   security:
     basePath: '/api'
@@ -33,6 +33,14 @@ server:
   port: ${SERVER_PORT:8080}
   error:
     includeStacktrace: ALWAYS
+
+spring:
+  #application.name: oss-todomvc-app # in bootstrap.yml
+  cloud.config:
+    password: '{cipher}AQB4hVdKfdq5m3/OUAot6cHsm0aBFnZ84MKBYoxplYKmyprJ0wmAHhjrYsytm1ItDR3Gtem6FLeqhkipRKPg2J+2dkmvcSWNi2qWz9dZ/fdPDnAdtI8g+mVwbrBn0y1wrwQyGMFlrW93biZJlNInSDtBJSX0FshPcv/p4E/p9RCw8IbuizI7d8O+Tr4CP2w21EUiQPDUQRB8BY0k3vqCULzOLvRTqnibgCcPsTk8+pZdYYNtCjuSbxcfrcogq2c1rrTKwbfWF4FjluKLTLfiobYNIkhASmagKq71LxpumJ5PwHR5FC1sEmv/mZsnNy09h36JYwF5zGbjog+Yu8wbVjosCsQWWg1gOliV8kkJ0BujELG956EtrTV+bm7m7AYzThA='
+    common-config:
+      enabled: true
+      application: common
 
 spring.datasource:
   continue-on-error: false # Do not stop if an error occurs while initializing the database.
