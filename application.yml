@@ -37,7 +37,7 @@ server:
 spring:
   #application.name: oss-todomvc-app # in bootstrap.yml
   cloud.config:
-    password: '{cipher}AQB4hVdKfdq5m3/OUAot6cHsm0aBFnZ84MKBYoxplYKmyprJ0wmAHhjrYsytm1ItDR3Gtem6FLeqhkipRKPg2J+2dkmvcSWNi2qWz9dZ/fdPDnAdtI8g+mVwbrBn0y1wrwQyGMFlrW93biZJlNInSDtBJSX0FshPcv/p4E/p9RCw8IbuizI7d8O+Tr4CP2w21EUiQPDUQRB8BY0k3vqCULzOLvRTqnibgCcPsTk8+pZdYYNtCjuSbxcfrcogq2c1rrTKwbfWF4FjluKLTLfiobYNIkhASmagKq71LxpumJ5PwHR5FC1sEmv/mZsnNy09h36JYwF5zGbjog+Yu8wbVjosCsQWWg1gOliV8kkJ0BujELG956EtrTV+bm7m7AYzThA='
+    password: '{cipher}AQAp06zZZdziujcJMH2OQyQrQIaLzYa5NC39K3mTtlWRfB94qsXGwVoOKUk20sGYZsw84OWbc9uF4BGqoPhnEaPmIniSB021BlbpwFaVuqqKmnSgPUmuL6GTw3Qb/xDVILkIvbfjvC7JbSyjMgJ4zDdRbxvVN9V66ndcEDI4p6VRDglPHyl1kTwSkT7798XRlmFAUWmOXg/lu+gQLUajMjHS96PtywrqgfjUmxoM323BZoT2PEAWoGorbREKETwwj2wOuq6+hsQ/by8hez+s3tW9gxKFJoD9BWP+qDQFIjkgt9kUeJU5WddSjD+G6At2Lkke7LTXBwfY3N8dns+2nhg6xXk9v9Wm8FR18hfvG+UoCliShwiHB1rgKv0cTa4cwQc='
     common-config:
       enabled: true
       application: common
